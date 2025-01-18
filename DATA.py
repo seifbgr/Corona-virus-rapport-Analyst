@@ -18,7 +18,7 @@ df = pd.merge(data_confirmed_filtered, data_death_filtered, on="Country", how="o
 df['Country'] = df['Country'].replace('US', 'United States')
 df = df[['Country','Confirmed','Deaths']]
 
-population = pd.read_csv(r'C:\Users\Utilisateur\Downloads\world_population.csv')
+population = pd.read_csv('https://drive.google.com/uc?id=1WuBkTYv12KWOrDLWonOyeS6087sDSjRb')
 population = population.rename(columns={"Country/Territory": "Country"})
 population['Country'] = population['Country'].str.upper()
 df['Country'] = df['Country'].str.upper()
