@@ -81,7 +81,7 @@ import pandas as pd
 
 # Initialiser l'application Dash
 app = dash.Dash(__name__)
-
+server = app.server
 custom_colorscale = ["#08da55", "#f9d107", "#fe0e0e"]  # Bleu, Jaune, Rouge
 
 # Définir la disposition de l'application avec Dropdown et Graph , table , 
